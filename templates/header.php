@@ -37,7 +37,7 @@
     get_template_part('templates/header', 'topbar');
   endif; ?>
   <div id="kad-shrinkheader" class="container" style="height:<?php echo esc_attr($header_height);?>px; line-height:<?php echo esc_attr($header_height);?>px;">
-    <div class="row">
+    <div class="row" style="background-color:#3a3a3a;">
       <div class="<?php echo esc_attr($logocclass); ?> clearfix kad-header-left">
         <div id="logo" class="logocase">
           <a class="brand logofont" style="height:<?php echo esc_attr($header_height);?>px; line-height:<?php echo esc_attr($header_height);?>px; display:block;" href="<?php echo esc_url(home_url()); ?>/">
