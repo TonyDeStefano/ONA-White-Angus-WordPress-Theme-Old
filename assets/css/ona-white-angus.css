@@ -6800,7 +6800,7 @@ html[xmlns] .slides {
   -o-transition: background 0.4s ease-out;
 }
 .kad-icon-box .kad-btn-primary {
-  margin-top: 5px
+  margin-top: 5px;
   color:transparent;
   background: transparent;
   box-shadow: none;

@@ -5,7 +5,7 @@
  */
 
 function pinnacle_scripts() {
-  wp_enqueue_style('pinnacle_theme', get_template_directory_uri() . '/assets/css/pinnacle.css', false, '143');
+  wp_enqueue_style('pinnacle_theme', get_template_directory_uri() . '/assets/css/ona-white-angus.css', false, '1');
   global $pinnacle; if(isset($pinnacle['skin_stylesheet']) && !empty($pinnacle['skin_stylesheet'])) {$skin = $pinnacle['skin_stylesheet'];} else { $skin = 'default.css';} 
  wp_enqueue_style('pinnacle_skin', get_template_directory_uri() . '/assets/css/skins/'.$skin.'', false, null);
 
