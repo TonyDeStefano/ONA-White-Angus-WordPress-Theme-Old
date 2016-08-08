@@ -135,7 +135,7 @@
               </header>
               <div class="entry-content clearfix" itemprop="articleBody">
                 <?php the_content(); ?>
-                <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'pinnacle'), 'after' => '</p></nav>')); ?>
+                <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'ona-white-angus'), 'after' => '</p></nav>')); ?>
               </div>
               <footer class="single-footer clearfix">
                 <?php get_template_part('templates/entry', 'meta-footer'); ?>

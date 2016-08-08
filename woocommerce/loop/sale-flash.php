@@ -11,6 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $post, $product, $pinnacle;
 if ($product->is_on_sale()) { ?>
-  	<?php $sale_text = __( 'Sale!', 'pinnacle'); ?>
+  	<?php $sale_text = __( 'Sale!', 'ona-white-angus'); ?>
 	<?php echo apply_filters('woocommerce_sale_flash', '<span class="onsale bg_primary headerfont">'.$sale_text.'</span>', $post, $product); ?>
 <?php } ?>

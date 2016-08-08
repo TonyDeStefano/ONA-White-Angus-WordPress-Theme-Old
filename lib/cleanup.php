@@ -68,7 +68,7 @@ function pinnacle_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'pinnacle_excerpt_length');
 function pinnacle_excerpt_more($more) {
-  $readmore =  __('Read More', 'pinnacle') ;
+  $readmore =  __('Read More', 'ona-white-angus') ;
   return ' &hellip; <a href="' . get_permalink() . '">'. $readmore . '</a>';
 }
 add_filter('excerpt_more', 'pinnacle_excerpt_more');

@@ -74,7 +74,7 @@ Template Name: Blog
 		                    else: ?>
 
 								<li class="error-not-found">
-									<?php _e('Sorry, no blog entries found.', 'pinnacle'); ?>
+									<?php _e('Sorry, no blog entries found.', 'ona-white-angus'); ?>
 								</li>
 
 							<?php endif; 
@@ -85,8 +85,8 @@ Template Name: Blog
         						} else { ?>      
 							        <nav class="post-nav">
 						                <ul class="pager">
-						                  <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'pinnacle')); ?></li>
-						                  <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'pinnacle')); ?></li>
+						                  <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'ona-white-angus')); ?></li>
+						                  <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'ona-white-angus')); ?></li>
 						                </ul>
 						            </nav>
 				        	<?php }

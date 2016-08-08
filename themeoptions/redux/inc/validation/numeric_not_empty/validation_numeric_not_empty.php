@@ -13,7 +13,7 @@ if ( ! class_exists( 'Redux_Validation_numeric_not_empty' ) ) {
 
             $this->parent       = $parent;
             $this->field        = $field;
-            $this->field['msg'] = ( isset( $this->field['msg'] ) ) ? $this->field['msg'] : __( 'You must provide a numerical value for this option.', 'pinnacle' );
+            $this->field['msg'] = ( isset( $this->field['msg'] ) ) ? $this->field['msg'] : __( 'You must provide a numerical value for this option.', 'ona-white-angus' );
             $this->value        = $value;
             $this->current      = $current;
 

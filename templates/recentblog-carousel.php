@@ -4,7 +4,7 @@
     	if( !empty($text)) { 
     		echo '<h3 class="sectiontitle">'.esc_html($text).'</h3>'; 
     	} else {
-    		echo '<h3 class="sectiontitle">'.__('Recent Posts', 'pinnacle').'</h3>';
+    		echo '<h3 class="sectiontitle">'.__('Recent Posts', 'ona-white-angus').'</h3>';
     	} 
 
     	if (pinnacle_display_sidebar()) {
@@ -36,7 +36,7 @@
 								<?php get_template_part('templates/content', 'post-grid-carousel');?>
 						</div>
 					<?php endwhile; else: ?>
-						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'pinnacle'); ?></li>
+						<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'ona-white-angus'); ?></li>
 					<?php endif; 
 					$wp_query = null; 
 				  	$wp_query = $temp;  // Reset

@@ -153,7 +153,7 @@ get_template_part('templates/page', 'header');
 										?>
                     				</div>
 								<?php endwhile; else: ?>
-									<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'pinnacle');?></li>
+									<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'ona-white-angus');?></li>
 								<?php endif; ?>
                 	</div> <!--portfoliowrapper-->
              
@@ -162,8 +162,8 @@ get_template_part('templates/page', 'header');
 		                            pinnacle_wp_pagination();   
 		                        } else { ?>      
 		                            <nav id="post-nav" class="pager">
-		                                <div class="previous"><?php next_posts_link(__('&larr; Older posts', 'pinnacle')); ?></div>
-		                                <div class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'pinnacle')); ?></div>
+		                                <div class="previous"><?php next_posts_link(__('&larr; Older posts', 'ona-white-angus')); ?></div>
+		                                <div class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'ona-white-angus')); ?></div>
 		                             </nav>
 		                        <?php }
 		                endif;

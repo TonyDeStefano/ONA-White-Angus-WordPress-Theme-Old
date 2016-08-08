@@ -15,10 +15,10 @@
 		   <div class="account_page_menu"> 
 			   	<ul class="account-menu">
 			   		<li>
-			   			<a href="<?php echo wc_customer_edit_account_url(); ?>" class="kad_editlink"> <?php echo __('Edit Account', 'pinnacle');?></a> 
+			   			<a href="<?php echo wc_customer_edit_account_url(); ?>" class="kad_editlink"> <?php echo __('Edit Account', 'ona-white-angus');?></a>
 			   		</li>
 			   		<li>
-			   			<a href="<?php echo wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) );?>" class="kad_logoutlink"><?php echo __('Logout', 'pinnacle');?></a>
+			   			<a href="<?php echo wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) );?>" class="kad_logoutlink"><?php echo __('Logout', 'ona-white-angus');?></a>
 			   		</li>
 			   	</ul>
 		   </div>

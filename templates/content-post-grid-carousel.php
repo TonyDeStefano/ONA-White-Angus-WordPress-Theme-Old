@@ -39,7 +39,7 @@
                           <div class="entry-content color_body" itemprop="articleBody">
                                 <p>
                                   <?php echo pinnacle_excerpt(16); ?> 
-                                  <a href="<?php the_permalink() ?>"><?php echo __('Read More', 'pinnacle');?></a>
+                                  <a href="<?php the_permalink() ?>"><?php echo __('Read More', 'ona-white-angus');?></a>
                                 </p> 
                               </div>
                           <footer class="clearfix">

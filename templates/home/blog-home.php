@@ -3,7 +3,7 @@
 		if(isset($pinnacle['blog_title']) && !empty($pinnacle['blog_title'])) {
 			$blog_title = $pinnacle['blog_title'];
 		} else {
-			$blog_title = __('Latest from the Blog', 'pinnacle');
+			$blog_title = __('Latest from the Blog', 'ona-white-angus');
 		} ?>
 		<div class="clearfix">
 			<h3 class="hometitle"><?php echo esc_html($blog_title);?></h3>
@@ -48,7 +48,7 @@
 					<?php get_template_part('templates/content', 'post-grid');?>
 				</div>
             <?php endwhile; else: ?>
-					<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'pinnacle');?></li>
+					<li class="error-not-found"><?php _e('Sorry, no blog entries found.', 'ona-white-angus');?></li>
 			<?php endif; ?>
 			<?php $wp_query = null; 
 			$wp_query = $temp;

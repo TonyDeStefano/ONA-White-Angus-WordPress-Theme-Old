@@ -87,8 +87,8 @@ function pinnacle_img_placeholder_small() {
   return apply_filters('kadence_placeholder_image_small', get_template_directory_uri() . '/assets/img/post_standard-60x60.jpg');
 }
 function pinnacle_lightbox_text() {
-  $loading_text = __('Loading...', 'pinnacle');
-  $of_text = __('of', 'pinnacle');
+  $loading_text = __('Loading...', 'ona-white-angus');
+  $of_text = __('of', 'ona-white-angus');
   $error_text = __('The Image could not be loaded.','pinnacle');
   echo  '<script type="text/javascript">var light_error = "'.$error_text.'", light_of = "%curr% '.$of_text.' %total%", light_load = "'.$loading_text.'";</script>';
 }
@@ -166,7 +166,7 @@ function pinnacle_wp_pagination() {
 // Ecerpt Length
 
 function pinnacle_excerpt($limit) {
-   global $pinnacle; if(!empty($pinnacle['post_readmore_text'])) {$readmore = $pinnacle['post_readmore_text'];} else { $readmore =  __('Read More', 'pinnacle') ;}
+   global $pinnacle; if(!empty($pinnacle['post_readmore_text'])) {$readmore = $pinnacle['post_readmore_text'];} else { $readmore =  __('Read More', 'ona-white-angus') ;}
    $readmore = '>'.$readmore.'<';
       $excerpt = explode(' ', get_the_excerpt(), $limit);
       if (count($excerpt)>=$limit) {
@@ -483,7 +483,7 @@ function pinnacle_adjacent_post_link_plus($args = '', $format = '%link &raquo;',
   foreach ( $posts as $post ) {
     $title = $post->post_title;
     if ( empty($post->post_title) )
-      $title = $previous ? __('Previous Post', 'pinnacle') : __('Next Post', 'pinnacle');
+      $title = $previous ? __('Previous Post', 'ona-white-angus') : __('Next Post', 'ona-white-angus');
 
     $title = apply_filters('the_title', $title, $post->ID);
     $date = mysql2date($r['date_format'], $post->post_date);
@@ -577,80 +577,80 @@ function pinnacle_show_extra_profile_fields( $user ) { ?>
 
 <table class="form-table">
   <tr>
-    <th><label for="twitter"><?php _e('Occupation', 'pinnacle');?></label></th>
+    <th><label for="twitter"><?php _e('Occupation', 'ona-white-angus');?></label></th>
     <td>
       <input type="text" name="occupation" id="occupation" value="<?php echo esc_attr( get_the_author_meta( 'occupation', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Occupation.', 'pinnacle');?></span>
+      <span class="description"><?php _e('Please enter your Occupation.', 'ona-white-angus');?></span>
     </td>
   </tr>
   <tr>
     <th><label for="twitter">Twitter</label></th>
     <td>
       <input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Twitter username.', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Twitter username.', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="facebook">Facebook</label></th>
     <td>
       <input type="text" name="facebook" id="facebook" value="<?php echo esc_attr( get_the_author_meta( 'facebook', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Facebook url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Facebook url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="google">Google Plus</label></th>
     <td>
       <input type="text" name="google" id="google" value="<?php echo esc_attr( get_the_author_meta( 'google', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Google Plus url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Google Plus url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="youtube">Youtube</label></th>
     <td>
       <input type="text" name="youtube" id="youtube" value="<?php echo esc_attr( get_the_author_meta( 'youtube', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your YouTube url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your YouTube url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="flickr">Flickr</label></th>
     <td>
       <input type="text" name="flickr" id="flickr" value="<?php echo esc_attr( get_the_author_meta( 'flickr', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Flickr url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Flickr url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="vimeo">Vimeo</label></th>
     <td>
       <input type="text" name="vimeo" id="vimeo" value="<?php echo esc_attr( get_the_author_meta( 'vimeo', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Vimeo url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Vimeo url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="linkedin">Linkedin</label></th>
     <td>
       <input type="text" name="linkedin" id="linkedin" value="<?php echo esc_attr( get_the_author_meta( 'linkedin', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Linkedin url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Linkedin url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="dribbble">Dribbble</label></th>
     <td>
       <input type="text" name="dribbble" id="dribbble" value="<?php echo esc_attr( get_the_author_meta( 'dribbble', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Dribbble url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Dribbble url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
     <tr>
     <th><label for="pinterest">Pinterest</label></th>
     <td>
       <input type="text" name="pinterest" id="pinterest" value="<?php echo esc_attr( get_the_author_meta( 'pinterest', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Pinterest url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Pinterest url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
   <tr>
     <th><label for="instagram">Instagram</label></th>
     <td>
       <input type="text" name="instagram" id="instagram" value="<?php echo esc_attr( get_the_author_meta( 'instagram', $user->ID ) ); ?>" class="regular-text" /><br />
-      <span class="description"><?php _e('Please enter your Instagram url. (be sure to include http://)', 'pinnacle'); ?></span>
+      <span class="description"><?php _e('Please enter your Instagram url. (be sure to include http://)', 'ona-white-angus'); ?></span>
     </td>
   </tr>
 </table>

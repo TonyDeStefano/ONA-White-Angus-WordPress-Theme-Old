@@ -127,8 +127,8 @@
 											            } else { ?>      
 												            <nav class="post-nav">
 												                <ul class="pager">
-													                  <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'pinnacle')); ?></li>
-													                  <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'pinnacle')); ?></li>
+													                  <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'ona-white-angus')); ?></li>
+													                  <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'ona-white-angus')); ?></li>
 												                </ul>
 												            </nav>
 											            <?php }

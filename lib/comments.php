@@ -35,18 +35,18 @@ class Kadence_Walker_Comment extends Walker_Comment {
         <h5 class="media-heading"><?php echo get_comment_author_link(); ?></h5>
         <div class="comment-meta">
         <time datetime="<?php echo comment_date('c'); ?>">
-          <?php printf(__('%1$s', 'pinnacle'), get_comment_date(),  get_comment_time()); ?>
+          <?php printf(__('%1$s', 'ona-white-angus'), get_comment_date(),  get_comment_time()); ?>
         </time>
         |
         <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))); ?>
         
-        <?php edit_comment_link(__('| (Edit)', 'pinnacle'), '', ''); ?>
+        <?php edit_comment_link(__('| (Edit)', 'ona-white-angus'), '', ''); ?>
         </div>
       </div>
 
       <?php if ($comment->comment_approved == '0') : ?>
         <div class="alert">
-          <?php _e('Your comment is awaiting moderation.', 'pinnacle'); ?>
+          <?php _e('Your comment is awaiting moderation.', 'ona-white-angus'); ?>
         </div>
       <?php endif; ?>
 

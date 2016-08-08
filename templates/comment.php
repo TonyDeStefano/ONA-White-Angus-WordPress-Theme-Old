@@ -8,15 +8,15 @@
       </h5>
       <time datetime="<?php echo comment_date('c'); ?>">
         <a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)); ?>">
-          <?php printf(__('%1$s', 'pinnacle'), get_comment_date(),  get_comment_time()); ?>
+          <?php printf(__('%1$s', 'ona-white-angus'), get_comment_date(),  get_comment_time()); ?>
         </a>
       </time>
 
-      <?php edit_comment_link(__('(Edit)', 'pinnacle'), '', ''); ?>
+      <?php edit_comment_link(__('(Edit)', 'ona-white-angus'), '', ''); ?>
 
       <?php if ($comment->comment_approved == '0') : ?>
         <div class="alert">
-          <?php _e('Your comment is awaiting moderation.', 'pinnacle'); ?>
+          <?php _e('Your comment is awaiting moderation.', 'ona-white-angus'); ?>
         </div>
       <?php endif; ?>
 

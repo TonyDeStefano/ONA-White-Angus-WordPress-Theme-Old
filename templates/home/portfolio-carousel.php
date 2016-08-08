@@ -188,7 +188,7 @@ if ( post_type_exists( 'portfolio' ) ) {
 	                                       		<div class="portfolio-table">
 	                                       			<div class="portfolio-cell">
 	                                       			<?php if($pstyleclass == "padded_style" ) { ?>
-		                                       				<a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'pinnacle');?></a>
+		                                       				<a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'ona-white-angus');?></a>
 		                                       				<?php if($lightbox) {?>
 		                                       					<a href="<?php echo esc_url($thumbnailURL); ?>" class="kad-btn kad-btn-primary plightbox-btn" title="<?php the_title();?>" data-rel="lightbox"><i class="icon-search"></i></a>
 		                                       				<?php } ?>
@@ -233,7 +233,7 @@ if ( post_type_exists( 'portfolio' ) ) {
                 			</div>
                     	</div>
 					<?php endwhile; else: ?>
-					<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'pinnacle');?></li>	
+					<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'ona-white-angus');?></li>
 					<?php endif;
                       $wp_query = null; 
                       $wp_query = $temp;

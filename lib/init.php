@@ -5,9 +5,9 @@
 function kadence_setup() {
   // Register Menus
   register_nav_menus(array(
-    'primary_navigation'  => __('Primary Navigation', 'pinnacle'),
-    'topbar_navigation'   => __('Topbar Navigation', 'pinnacle'),
-    'footer_navigation'   => __('Footer Navigation', 'pinnacle'),
+    'primary_navigation'  => __('Primary Navigation', 'ona-white-angus'),
+    'topbar_navigation'   => __('Topbar Navigation', 'ona-white-angus'),
+    'footer_navigation'   => __('Footer Navigation', 'ona-white-angus'),
   ));
   add_theme_support('post-thumbnails');
   add_theme_support( 'title-tag' );

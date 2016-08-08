@@ -182,7 +182,7 @@
                     <div class="clearfix"></div>
                 </div><!--postclass-->
                 <footer>
-                    <?php wp_link_pages(array('before' => '<nav id="page-nav" class="wp-pagenavi"><p>' . __('Pages:', 'pinnacle'), 'after' => '</p></nav>')); 
+                    <?php wp_link_pages(array('before' => '<nav id="page-nav" class="wp-pagenavi"><p>' . __('Pages:', 'ona-white-angus'), 'after' => '</p></nav>'));
                     if (!empty($portfolio_carousel) || $portfolio_carousel == 'default') { 
                         if(isset($pinnacle['single_portfolio_carousel_default']) && $pinnacle['single_portfolio_carousel_default'] == "yes") {
                           get_template_part('templates/bottomportfolio', 'carousel');

@@ -3,7 +3,7 @@
  * Register sidebars and widgets
  */
 function pinnacle_sidebar_list() {
-  $all_sidebars=array(array('name'=>__('Primary Sidebar', 'pinnacle'), 'id'=>'sidebar-primary'));
+  $all_sidebars=array(array('name'=>__('Primary Sidebar', 'ona-white-angus'), 'id'=>'sidebar-primary'));
   global $pinnacle; 
   if(isset($pinnacle['cust_sidebars'])) {
   if (is_array($pinnacle['cust_sidebars'])) {
@@ -45,7 +45,7 @@ function pinnacle_widgets_init() {
     //Topbar 
   if(pinnacle_display_topbar_widget()) {
   register_sidebar(array(
-    'name'          => __('Topbar Widget', 'pinnacle'),
+    'name'          => __('Topbar Widget', 'ona-white-angus'),
     'id'            => 'topbarright',
     'before_widget' => '',
     'after_widget'  => '',
@@ -55,7 +55,7 @@ function pinnacle_widgets_init() {
 }
   // Sidebars
   register_sidebar(array(
-    'name'          => __('Primary Sidebar', 'pinnacle'),
+    'name'          => __('Primary Sidebar', 'ona-white-angus'),
     'id'            => 'sidebar-primary',
     'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="widget-inner">',
     'after_widget'  => '</div></section>',
@@ -68,7 +68,7 @@ function pinnacle_widgets_init() {
   if ($footer_layout == "fourc") {
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 1', 'pinnacle'),
+        'name' => __('Footer Column 1', 'ona-white-angus'),
         'id' => 'footer_1',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -78,7 +78,7 @@ function pinnacle_widgets_init() {
     );
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 2', 'pinnacle'),
+        'name' => __('Footer Column 2', 'ona-white-angus'),
         'id' => 'footer_2',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -88,7 +88,7 @@ function pinnacle_widgets_init() {
     );
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 3', 'pinnacle'),
+        'name' => __('Footer Column 3', 'ona-white-angus'),
         'id' => 'footer_3',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -98,7 +98,7 @@ function pinnacle_widgets_init() {
     );
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 4', 'pinnacle'),
+        'name' => __('Footer Column 4', 'ona-white-angus'),
         'id' => 'footer_4',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -109,7 +109,7 @@ function pinnacle_widgets_init() {
   } else if ($footer_layout == "threec") {
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 1', 'pinnacle'),
+        'name' => __('Footer Column 1', 'ona-white-angus'),
         'id' => 'footer_third_1',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -119,7 +119,7 @@ function pinnacle_widgets_init() {
     );
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 2', 'pinnacle'),
+        'name' => __('Footer Column 2', 'ona-white-angus'),
         'id' => 'footer_third_2',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -129,7 +129,7 @@ function pinnacle_widgets_init() {
     );
     if ( function_exists('register_sidebar') )
       register_sidebar(array(
-        'name' => __('Footer Column 3', 'pinnacle'),
+        'name' => __('Footer Column 3', 'ona-white-angus'),
         'id' => 'footer_third_3',
         'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside></div>',
@@ -140,7 +140,7 @@ function pinnacle_widgets_init() {
   } else {
       if ( function_exists('register_sidebar') )
         register_sidebar(array(
-          'name' => __('Footer Column 1', 'pinnacle'),
+          'name' => __('Footer Column 1', 'ona-white-angus'),
           'id' => 'footer_double_1',
           'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
           'after_widget' => '</aside></div>',
@@ -150,7 +150,7 @@ function pinnacle_widgets_init() {
       );
       if ( function_exists('register_sidebar') )
         register_sidebar(array(
-          'name' => __('Footer Column 2', 'pinnacle'),
+          'name' => __('Footer Column 2', 'ona-white-angus'),
           'id' => 'footer_double_2',
           'before_widget' => '<div class="footer-widget"><aside id="%1$s" class="widget %2$s">',
           'after_widget' => '</aside></div>',
@@ -175,8 +175,8 @@ add_action('widgets_init', 'pinnacle_widgets_init');
 class kad_contact_widget extends WP_Widget {
   private static $instance = 0;
     public function __construct() {
-    $widget_ops = array('classname' => 'widget_kadence_contact', 'description' => __('Use this widget to add a Vcard to your site', 'pinnacle'));
-    parent::__construct('widget_kadence_contact', __('Pinnacle: Contact/Vcard', 'pinnacle'), $widget_ops);
+    $widget_ops = array('classname' => 'widget_kadence_contact', 'description' => __('Use this widget to add a Vcard to your site', 'ona-white-angus'));
+    parent::__construct('widget_kadence_contact', __('Pinnacle: Contact/Vcard', 'ona-white-angus'), $widget_ops);
   }
 
   public function widget($args, $instance) {
@@ -244,43 +244,43 @@ class kad_contact_widget extends WP_Widget {
       $email          = isset($instance['email']) ? esc_attr($instance['email']) : '';
   ?>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('company')); ?>"><?php _e('Company Name:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('company')); ?>"><?php _e('Company Name:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('company')); ?>" name="<?php echo esc_attr($this->get_field_name('company')); ?>" type="text" value="<?php echo esc_attr($company); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('name')); ?>"><?php _e('Name:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('name')); ?>"><?php _e('Name:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('name')); ?>" name="<?php echo esc_attr($this->get_field_name('name')); ?>" type="text" value="<?php echo esc_attr($name); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('street_address')); ?>"><?php _e('Street Address:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('street_address')); ?>"><?php _e('Street Address:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('street_address')); ?>" name="<?php echo esc_attr($this->get_field_name('street_address')); ?>" type="text" value="<?php echo esc_attr($street_address); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('locality')); ?>"><?php _e('City/Locality:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('locality')); ?>"><?php _e('City/Locality:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('locality')); ?>" name="<?php echo esc_attr($this->get_field_name('locality')); ?>" type="text" value="<?php echo esc_attr($locality); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('region')); ?>"><?php _e('State/Region:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('region')); ?>"><?php _e('State/Region:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('region')); ?>" name="<?php echo esc_attr($this->get_field_name('region')); ?>" type="text" value="<?php echo esc_attr($region); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('postal_code')); ?>"><?php _e('Zipcode/Postal Code:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('postal_code')); ?>"><?php _e('Zipcode/Postal Code:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('postal_code')); ?>" name="<?php echo esc_attr($this->get_field_name('postal_code')); ?>" type="text" value="<?php echo esc_attr($postal_code); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('tel')); ?>"><?php _e('Mobile Telephone:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('tel')); ?>"><?php _e('Mobile Telephone:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('tel')); ?>" name="<?php echo esc_attr($this->get_field_name('tel')); ?>" type="text" value="<?php echo esc_attr($tel); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('fixedtel')); ?>"><?php _e('Fixed Telephone:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('fixedtel')); ?>"><?php _e('Fixed Telephone:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('fixedtel')); ?>" name="<?php echo esc_attr($this->get_field_name('fixedtel')); ?>" type="text" value="<?php echo esc_attr($fixedtel); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('email')); ?>"><?php _e('Email:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('email')); ?>"><?php _e('Email:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('email')); ?>" name="<?php echo esc_attr($this->get_field_name('email')); ?>" type="text" value="<?php echo esc_attr($email); ?>" />
     </p>
   <?php
@@ -292,8 +292,8 @@ class kad_contact_widget extends WP_Widget {
 class kad_social_widget extends WP_Widget {
   private static $instance = 0;
     public function __construct() {
-    $widget_ops = array('classname' => 'widget_kadence_social', 'description' => __('Simple way to add Social Icons', 'pinnacle'));
-    parent::__construct('widget_kadence_social', __('Pinnacle: Social Links', 'pinnacle'), $widget_ops);
+    $widget_ops = array('classname' => 'widget_kadence_social', 'description' => __('Simple way to add Social Icons', 'ona-white-angus'));
+    parent::__construct('widget_kadence_social', __('Pinnacle: Social Links', 'ona-white-angus'), $widget_ops);
   }
 
   function widget($args, $instance) {
@@ -388,59 +388,59 @@ class kad_social_widget extends WP_Widget {
     $rss        = isset($instance['rss']) ? esc_attr($instance['rss']) : '';
   ?>
   <p>
-      <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('facebook')); ?>"><?php _e('Facebook:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('facebook')); ?>"><?php _e('Facebook:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('facebook')); ?>" name="<?php echo esc_attr($this->get_field_name('facebook')); ?>" type="text" value="<?php echo esc_attr($facebook); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('twitter')); ?>"><?php _e('Twitter:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('twitter')); ?>"><?php _e('Twitter:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('twitter')); ?>" name="<?php echo esc_attr($this->get_field_name('twitter')); ?>" type="text" value="<?php echo esc_attr($twitter); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('instagram')); ?>"><?php _e('Instagram:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('instagram')); ?>"><?php _e('Instagram:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('instagram')); ?>" name="<?php echo esc_attr($this->get_field_name('instagram')); ?>" type="text" value="<?php echo esc_attr($instagram); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('googleplus')); ?>"><?php _e('GooglePlus:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('googleplus')); ?>"><?php _e('GooglePlus:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('googleplus')); ?>" name="<?php echo esc_attr($this->get_field_name('googleplus')); ?>" type="text" value="<?php echo esc_attr($googleplus); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('flickr')); ?>"><?php _e('Flickr:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('flickr')); ?>"><?php _e('Flickr:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('flickr')); ?>" name="<?php echo esc_attr($this->get_field_name('flickr')); ?>" type="text" value="<?php echo esc_attr($flickr); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('vimeo')); ?>"><?php _e('Vimeo:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('vimeo')); ?>"><?php _e('Vimeo:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('vimeo')); ?>" name="<?php echo esc_attr($this->get_field_name('vimeo')); ?>" type="text" value="<?php echo esc_attr($vimeo); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('youtube')); ?>"><?php _e('Youtube:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('youtube')); ?>"><?php _e('Youtube:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('youtube')); ?>" name="<?php echo esc_attr($this->get_field_name('youtube')); ?>" type="text" value="<?php echo esc_attr($youtube); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('pinterest')); ?>"><?php _e('Pinterest:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('pinterest')); ?>"><?php _e('Pinterest:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('pinterest')); ?>" name="<?php echo esc_attr($this->get_field_name('pinterest')); ?>" type="text" value="<?php echo esc_attr($pinterest); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('dribbble')); ?>"><?php _e('Dribbble:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('dribbble')); ?>"><?php _e('Dribbble:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('dribbble')); ?>" name="<?php echo esc_attr($this->get_field_name('dribbble')); ?>" type="text" value="<?php echo esc_attr($dribbble); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('linkedin')); ?>"><?php _e('Linkedin:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('linkedin')); ?>"><?php _e('Linkedin:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('linkedin')); ?>" name="<?php echo esc_attr($this->get_field_name('linkedin')); ?>" type="text" value="<?php echo esc_attr($linkedin); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('tumblr')); ?>"><?php _e('Tumblr:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('tumblr')); ?>"><?php _e('Tumblr:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('tumblr')); ?>" name="<?php echo esc_attr($this->get_field_name('tumblr')); ?>" type="text" value="<?php echo esc_attr($tumblr); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('vk')); ?>"><?php _e('VK:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('vk')); ?>"><?php _e('VK:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('vk')); ?>" name="<?php echo esc_attr($this->get_field_name('vk')); ?>" type="text" value="<?php echo esc_attr($vk); ?>" />
     </p>
     <p>
-      <label for="<?php echo esc_attr($this->get_field_id('rss')); ?>"><?php _e('RSS:', 'pinnacle'); ?></label>
+      <label for="<?php echo esc_attr($this->get_field_id('rss')); ?>"><?php _e('RSS:', 'ona-white-angus'); ?></label>
       <input class="widefat" id="<?php echo esc_attr($this->get_field_id('rss')); ?>" name="<?php echo esc_attr($this->get_field_name('rss')); ?>" type="text" value="<?php echo esc_attr($rss); ?>" />
     </p>
   <?php
@@ -455,8 +455,8 @@ class kad_recent_posts_widget extends WP_Widget {
 
   private static $instance = 0;
     public function __construct() {
-      $widget_ops = array('classname' => 'kadence_recent_posts', 'description' => __('This shows the most recent posts on your site with a thumbnail', 'pinnacle'));
-      parent::__construct('kadence_recent_posts', __('Pinnacle: Recent Posts', 'pinnacle'), $widget_ops);
+      $widget_ops = array('classname' => 'kadence_recent_posts', 'description' => __('This shows the most recent posts on your site with a thumbnail', 'ona-white-angus'));
+      parent::__construct('kadence_recent_posts', __('Pinnacle: Recent Posts', 'ona-white-angus'), $widget_ops);
 
   }
 
@@ -469,7 +469,7 @@ class kad_recent_posts_widget extends WP_Widget {
     ob_start();
     extract($args);
 
-    $title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts', 'pinnacle') : $instance['title'], $instance, $this->id_base);
+    $title = apply_filters('widget_title', empty($instance['title']) ? __('Recent Posts', 'ona-white-angus') : $instance['title'], $instance, $this->id_base);
     if ( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
 
@@ -524,13 +524,13 @@ class kad_recent_posts_widget extends WP_Widget {
     }
 
 ?>
-    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'pinnacle'); ?></label>
+    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'ona-white-angus'); ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
-    <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:', 'pinnacle'); ?></label>
+    <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show:', 'ona-white-angus'); ?></label>
     <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
         <p>
-    <label for="<?php echo $this->get_field_id('thecate'); ?>"><?php _e('Limit to Catagory (Optional):', 'pinnacle'); ?></label>
+    <label for="<?php echo $this->get_field_id('thecate'); ?>"><?php _e('Limit to Catagory (Optional):', 'ona-white-angus'); ?></label>
     <select id="<?php echo $this->get_field_id('thecate'); ?>" name="<?php echo $this->get_field_name('thecate'); ?>"><?php echo implode('', $cate_options); ?></select>
   </p>
 <?php
@@ -545,8 +545,8 @@ class kad_post_grid_widget extends WP_Widget {
 
   private static $instance = 0;
     public function __construct() {
-      $widget_ops = array('classname' => 'kadence_image_grid', 'description' => __('This shows a grid of featured images from recent posts or portfolio items', 'pinnacle'));
-      parent::__construct('kadence_image_grid', __('Pinnacle: Post Grid', 'pinnacle'), $widget_ops);
+      $widget_ops = array('classname' => 'kadence_image_grid', 'description' => __('This shows a grid of featured images from recent posts or portfolio items', 'ona-white-angus'));
+      parent::__construct('kadence_image_grid', __('Pinnacle: Post Grid', 'ona-white-angus'), $widget_ops);
 
   }
 
@@ -646,22 +646,22 @@ class kad_post_grid_widget extends WP_Widget {
 
 
 ?>
-    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'pinnacle'); ?></label>
+    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'ona-white-angus'); ?></label>
     <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 
     <p><label for="<?php echo $this->get_field_id('gridchoice'); ?>"><?php _e('Grid Choice:','pinnacle'); ?></label>
         <select id="<?php echo $this->get_field_id('gridchoice'); ?>" name="<?php echo $this->get_field_name('gridchoice'); ?>">
-            <option value="post"<?php echo ($gridchoice === 'post' ? ' selected="selected"' : ''); ?>><?php _e('Blog Posts', 'pinnacle'); ?></option>
-            <option value="portfolio"<?php echo ($gridchoice === 'portfolio' ? ' selected="selected"' : ''); ?>><?php _e('Portfolio', 'pinnacle'); ?></option>
+            <option value="post"<?php echo ($gridchoice === 'post' ? ' selected="selected"' : ''); ?>><?php _e('Blog Posts', 'ona-white-angus'); ?></option>
+            <option value="portfolio"<?php echo ($gridchoice === 'portfolio' ? ' selected="selected"' : ''); ?>><?php _e('Portfolio', 'ona-white-angus'); ?></option>
         </select></p>
         
-        <p><label for="<?php echo $this->get_field_id('thecat'); ?>"><?php _e('If Post - Choose Category (Optional):', 'pinnacle'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('thecat'); ?>"><?php _e('If Post - Choose Category (Optional):', 'ona-white-angus'); ?></label>
     <select id="<?php echo $this->get_field_id('thecat'); ?>" name="<?php echo $this->get_field_name('thecat'); ?>"><?php echo implode('', $cat_options); ?></select></p>
         
-    <p><label for="<?php echo $this->get_field_id('thetype'); ?>"><?php _e('If Portfolio - Choose Type (Optional):', 'pinnacle'); ?></label>
+    <p><label for="<?php echo $this->get_field_id('thetype'); ?>"><?php _e('If Portfolio - Choose Type (Optional):', 'ona-white-angus'); ?></label>
     <select id="<?php echo $this->get_field_id('thetype'); ?>" name="<?php echo $this->get_field_name('thetype'); ?>"><?php echo implode('', $type_options); ?></select></p>
         
-        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of images to show:', 'pinnacle'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of images to show:', 'ona-white-angus'); ?></label>
     <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" size="3" /></p>
   
 <?php
@@ -673,8 +673,8 @@ class kad_image_widget extends WP_Widget{
 
   private static $instance = 0;
     public function __construct() {
-        $widget_ops = array('classname' => 'kadence_simple_image', 'description' => __('This allows for an image and a simple about text.', 'pinnacle'));
-        parent::__construct('kadence_simple_image', __('Pinnacle: Image', 'pinnacle'), $widget_ops);
+        $widget_ops = array('classname' => 'kadence_simple_image', 'description' => __('This allows for an image and a simple about text.', 'ona-white-angus'));
+        parent::__construct('kadence_simple_image', __('Pinnacle: Image', 'ona-white-angus'), $widget_ops);
     }
 
     public function widget($args, $instance){ 
@@ -730,10 +730,10 @@ class kad_image_widget extends WP_Widget{
     if (isset($instance['image_link_open'])) { $image_link_open = esc_attr($instance['image_link_open']); } else {$image_link_open = 'lightbox';}
     $link_options = array();
     $link_options_array = array();
-    $link_options[] = array("slug" => "lightbox", "name" => __('Lightbox', 'pinnacle'));
-    $link_options[] = array("slug" => "_blank", "name" => __('New Window', 'pinnacle'));
-    $link_options[] = array("slug" => "_self", "name" => __('Same Window', 'pinnacle'));
-    $link_options[] = array("slug" => "none", "name" => __('No Link', 'pinnacle'));
+    $link_options[] = array("slug" => "lightbox", "name" => __('Lightbox', 'ona-white-angus'));
+    $link_options[] = array("slug" => "_blank", "name" => __('New Window', 'ona-white-angus'));
+    $link_options[] = array("slug" => "_self", "name" => __('Same Window', 'ona-white-angus'));
+    $link_options[] = array("slug" => "none", "name" => __('No Link', 'ona-white-angus'));
 
     foreach ($link_options as $link_option) {
       if ($image_link_open == $link_option['slug']) { $selected=' selected="selected"';} else { $selected=""; }
@@ -745,20 +745,20 @@ class kad_image_widget extends WP_Widget{
         <img class="kad_custom_media_image" src="<?php if(!empty($instance['image_uri'])){echo $instance['image_uri'];} ?>" style="margin:0;padding:0;max-width:100px;display:block" />
     </p>
     <p>
-        <label for="<?php echo $this->get_field_id('image_uri'); ?>"><?php _e('Image URL', 'pinnacle'); ?></label><br />
+        <label for="<?php echo $this->get_field_id('image_uri'); ?>"><?php _e('Image URL', 'ona-white-angus'); ?></label><br />
         <input type="text" class="widefat kad_custom_media_url" name="<?php echo $this->get_field_name('image_uri'); ?>" id="<?php echo $this->get_field_id('image_uri'); ?>" value="<?php echo $image_uri; ?>">
-        <input type="button" value="<?php _e('Upload', 'pinnacle'); ?>" class="button kad_custom_media_upload" id="kad_custom_image_uploader" />
+        <input type="button" value="<?php _e('Upload', 'ona-white-angus'); ?>" class="button kad_custom_media_upload" id="kad_custom_image_uploader" />
     </p>
     <p>
-        <label for="<?php echo $this->get_field_id('image_link_open'); ?>"><?php _e('Image opens in', 'pinnacle'); ?></label><br />
+        <label for="<?php echo $this->get_field_id('image_link_open'); ?>"><?php _e('Image opens in', 'ona-white-angus'); ?></label><br />
         <select id="<?php echo $this->get_field_id('image_link_open'); ?>" name="<?php echo $this->get_field_name('image_link_open'); ?>"><?php echo implode('', $link_options_array);?></select>
     </p>
     <p>
-        <label for="<?php echo $this->get_field_id('image_link'); ?>"><?php _e('Image Link (optional)', 'pinnacle'); ?></label><br />
+        <label for="<?php echo $this->get_field_id('image_link'); ?>"><?php _e('Image Link (optional)', 'ona-white-angus'); ?></label><br />
         <input type="text" class="widefat kad_img_widget_link" name="<?php echo $this->get_field_name('image_link'); ?>" id="<?php echo $this->get_field_id('image_link'); ?>" value="<?php echo $image_link; ?>">
     </p>
     <p>
-      <label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Text/Caption (optional)', 'pinnacle'); ?></label><br />
+      <label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Text/Caption (optional)', 'ona-white-angus'); ?></label><br />
       <textarea name="<?php echo $this->get_field_name('text'); ?>" id="<?php echo $this->get_field_id('text'); ?>" class="widefat" ><?php if(!empty($instance['text'])) echo $instance['text']; ?></textarea>
     </p>
   </div>

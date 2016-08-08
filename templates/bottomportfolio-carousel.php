@@ -6,7 +6,7 @@
 				    if(!empty($text)) {
 				     	echo '<h3 class="sectiontitle">'.esc_html($text).'</h3>';
 				 	} else {
-				 		echo '<h3 class="sectiontitle">'.__('Recent Projects', 'pinnacle').'</h3>';
+				 		echo '<h3 class="sectiontitle">'.__('Recent Projects', 'ona-white-angus').'</h3>';
 				 	} 
       				if(isset($pinnacle['portfolio_style_default'])) {
 		      			$pstyleclass = $pinnacle['portfolio_style_default'];
@@ -135,7 +135,7 @@
 	                                       		<div class="portfolio-table">
 	                                       			<div class="portfolio-cell">
 	                                       			<?php if($pstyleclass == "padded_style" ) { ?>
-		                                       				<a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'pinnacle');?></a>
+		                                       				<a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'ona-white-angus');?></a>
 		                                       				<?php if($plb) {?>
 		                                       					<a href="<?php echo esc_url($thumbnailURL); ?>" class="kad-btn kad-btn-primary plightbox-btn" title="<?php the_title();?>" data-rel="lightbox"><i class="kt-icon-search4"></i></a>
 		                                       				<?php } ?>
@@ -180,7 +180,7 @@
                 				</div>
                     		</div>
 							<?php endwhile; else: ?>
-							<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'pinnacle');?></li>
+							<li class="error-not-found"><?php _e('Sorry, no portfolio entries found.', 'ona-white-angus');?></li>
 							<?php endif;
 							$wp_query = null; 
 							$wp_query = $temp;

@@ -60,7 +60,7 @@ if(isset($pinnacle['product_simg_resize']) && $pinnacle['product_simg_resize'] =
 
 		} else {
 
-			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="'.__('Placeholder', 'pinnacle').'" />', woocommerce_placeholder_img_src() ), $post->ID );
+			echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="'.__('Placeholder', 'ona-white-angus').'" />', woocommerce_placeholder_img_src() ), $post->ID );
 
 		}
 	?>

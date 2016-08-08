@@ -24,7 +24,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
-		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'pinnacle' ); ?></p>
+		<p class="stock out-of-stock"><?php _e( 'This product is currently out of stock and unavailable.', 'ona-white-angus' ); ?></p>
 	<?php else : ?>
 	<table class="variations" cellspacing="0">
 		<tbody>
@@ -36,7 +36,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 					<?php
 								$selected = isset( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) ? wc_clean( $_REQUEST[ 'attribute_' . sanitize_title( $attribute_name ) ] ) : $product->get_variation_default_attribute( $attribute_name );
 								wc_dropdown_variation_attribute_options( array( 'options' => $options, 'attribute' => $attribute_name, 'product' => $product, 'selected' => $selected, 'class'=>'kad-select') );
-								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'Clear selection', 'pinnacle' ) . '</a>' : '';
+								echo end( $attribute_keys ) === $attribute_name ? '<a class="reset_variations" href="#">' . __( 'Clear selection', 'ona-white-angus' ) . '</a>' : '';
 							?>
 
 					</td>

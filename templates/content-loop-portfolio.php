@@ -22,7 +22,7 @@ $postsummery = get_post_meta( $post->ID, '_kad_post_summery', true );
                               <div class="portfolio-table">
                                   <div class="portfolio-cell">
                                     <?php if($kt_portfolio_loop['pstyleclass'] == "padded_style" ) { ?>
-                                          <a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'pinnacle');?></a>
+                                          <a href="<?php the_permalink() ?>" class="kad-btn kad-btn-primary"><?php echo __('View details', 'ona-white-angus');?></a>
                                           <?php if($kt_portfolio_loop['lightbox'] == 'true') {?>
                                                 <a href="<?php echo esc_url($thumbnailURL); ?>" class="kad-btn kad-btn-primary plightbox-btn" title="<?php the_title();?>" data-rel="lightbox"><i class="icon-search"></i></a>
                                           <?php } ?>

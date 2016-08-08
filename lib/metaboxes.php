@@ -46,7 +46,7 @@ add_filter( 'cmb_render_imag_select_taxonomy', 'imag_render_imag_select_taxonomy
 function imag_render_imag_select_taxonomy( $field, $meta ) {
 
     wp_dropdown_categories(array(
-            'show_option_none' => __( "All", 'pinnacle' ),
+            'show_option_none' => __( "All", 'one-white-angus' ),
             'hierarchical' => 1,
             'taxonomy' => $field['taxonomy'],
             'orderby' => 'name', 
@@ -62,7 +62,7 @@ add_filter( 'cmb_render_imag_select_category', 'imag_render_imag_select_category
 function imag_render_imag_select_category( $field, $meta ) {
 
     wp_dropdown_categories(array(
-            'show_option_none' => __( "All Blog Posts", 'pinnacle' ),
+            'show_option_none' => __( "All Blog Posts", 'one-white-angus' ),
             'hierarchical' => 1,
             'taxonomy' => 'category',
             'orderby' => 'name', 
@@ -147,7 +147,7 @@ function pinnacle_metaboxes( array $meta_boxes ) {
 
 $meta_boxes[] = array(
 				'id'         => 'standard_post_metabox',
-				'title'      => __("Standard Post Options", 'pinnacle'),
+				'title'      => __("Standard Post Options", 'one-white-angus'),
 				'pages'      => array( 'post',), // Post type
 				//'show_on' => array( 'key' => 'format', 'value' => 'standard'),
 				'context'    => 'normal',
@@ -155,22 +155,22 @@ $meta_boxes[] = array(
 				'show_names' => true, // Show field names on the left
 				'fields' => array(
 			array(
-				'name'    => __("Post Summary", 'pinnacle' ),
+				'name'    => __("Post Summary", 'one-white-angus' ),
 				'desc'    => '',
 				'id'      => $prefix . 'post_summery',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Standard Post Default', 'pinnacle' ), 'value' => 'default', ),
-					array( 'name' => __('Text', 'pinnacle' ), 'value' => 'text', ),
-					array( 'name' => __('Portrait Image', 'pinnacle'), 'value' => 'img_portrait', ),
-					array( 'name' => __('Landscape Image', 'pinnacle'), 'value' => 'img_landscape', ),
+					array( 'name' => __('Standard Post Default', 'ona-white-angus' ), 'value' => 'default', ),
+					array( 'name' => __('Text', 'ona-white-angus' ), 'value' => 'text', ),
+					array( 'name' => __('Portrait Image', 'ona-white-angus'), 'value' => 'img_portrait', ),
+					array( 'name' => __('Landscape Image', 'ona-white-angus'), 'value' => 'img_landscape', ),
 				),
 			),
 		),
 	);
 $meta_boxes[] = array(
 				'id'         => 'image_post_metabox',
-				'title'      => __("Image Post Options", 'pinnacle'),
+				'title'      => __("Image Post Options", 'one-white-angus'),
 				'pages'      => array( 'post',), // Post type
 				//'show_on' => array( 'key' => 'format', 'value' => 'standard'),
 				'context'    => 'normal',
@@ -179,88 +179,88 @@ $meta_boxes[] = array(
 				'fields' => array(
 			
 			array(
-				'name'    => __("Head Content", 'pinnacle' ),
+				'name'    => __("Head Content", 'one-white-angus' ),
 				'desc'    => '',
 				'id'      => $prefix . 'blog_head',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __("Image Post Default", 'pinnacle' ), 'value' => 'default', ),
-					array( 'name' => __("Image", 'pinnacle' ), 'value' => 'image', ),
-					array( 'name' => __("None", 'pinnacle' ), 'value' => 'none', ),
+					array( 'name' => __("Image Post Default", 'one-white-angus' ), 'value' => 'default', ),
+					array( 'name' => __("Image", 'one-white-angus' ), 'value' => 'image', ),
+					array( 'name' => __("None", 'one-white-angus' ), 'value' => 'none', ),
 				),
 			),
 			array(
-				'name' => __("Max Image Width", 'pinnacle' ),
-				'desc' => __("Default is: 848 or 1140 on fullwidth posts (Note: just input number, example: 650)", 'pinnacle' ),
+				'name' => __("Max Image Width", 'one-white-angus' ),
+				'desc' => __("Default is: 848 or 1140 on fullwidth posts (Note: just input number, example: 650)", 'one-white-angus' ),
 				'id'   => $prefix . 'image_posthead_width',
 				'type' => 'text_small',
 			),
 			array(
-				'name'    => __("Post Summary", 'pinnacle' ),
+				'name'    => __("Post Summary", 'one-white-angus' ),
 				'desc'    => '',
 				'id'      => $prefix . 'image_post_summery',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Image Post Default', 'pinnacle' ), 'value' => 'default', ),
-					array( 'name' => __('Text', 'pinnacle' ), 'value' => 'text', ),
-					array( 'name' => __('Portrait Image', 'pinnacle'), 'value' => 'img_portrait', ),
-					array( 'name' => __('Landscape Image', 'pinnacle'), 'value' => 'img_landscape', ),
+					array( 'name' => __('Image Post Default', 'ona-white-angus' ), 'value' => 'default', ),
+					array( 'name' => __('Text', 'ona-white-angus' ), 'value' => 'text', ),
+					array( 'name' => __('Portrait Image', 'ona-white-angus'), 'value' => 'img_portrait', ),
+					array( 'name' => __('Landscape Image', 'ona-white-angus'), 'value' => 'img_landscape', ),
 				),
 			),
 		),
 	);
 	$meta_boxes[] = array(
 				'id'         => 'post_metabox',
-				'title'      => __("Post Options", 'pinnacle'),
+				'title'      => __("Post Options", 'one-white-angus'),
 				'pages'      => array( 'post'), // Post type
 				'context'    => 'normal',
 				'priority'   => 'high',
 				'show_names' => true, // Show field names on the left
 				'fields' => array(
 			array(
-				'name' => __('Display Sidebar?', 'pinnacle'),
-				'desc' => __('Choose if layout is fullwidth or sidebar', 'pinnacle'),
+				'name' => __('Display Sidebar?', 'ona-white-angus'),
+				'desc' => __('Choose if layout is fullwidth or sidebar', 'ona-white-angus'),
 				'id'   => $prefix . 'post_sidebar',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Default', 'pinnacle'), 'value' => 'default', ),
-					array( 'name' => __('Yes', 'pinnacle'), 'value' => 'yes', ),
-					array( 'name' => __('No', 'pinnacle'), 'value' => 'no', ),
+					array( 'name' => __('Default', 'ona-white-angus'), 'value' => 'default', ),
+					array( 'name' => __('Yes', 'ona-white-angus'), 'value' => 'yes', ),
+					array( 'name' => __('No', 'ona-white-angus'), 'value' => 'no', ),
 				),
 			),
 			array(
-				'name'    => __('Choose Sidebar', 'pinnacle'),
+				'name'    => __('Choose Sidebar', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'sidebar_choice',
 				'type'    => 'imag_select_sidebars',
 			),
 			array(
-				'name' => __('Author Info', 'pinnacle'),
-				'desc' => __('Display an author info box?', 'pinnacle'),
+				'name' => __('Author Info', 'ona-white-angus'),
+				'desc' => __('Display an author info box?', 'ona-white-angus'),
 				'id'   => $prefix . 'blog_author',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Default', 'pinnacle'), 'value' => 'default', ),
-					array( 'name' => __('No', 'pinnacle'), 'value' => 'no', ),
-					array( 'name' => __('Yes', 'pinnacle'), 'value' => 'yes', ),
+					array( 'name' => __('Default', 'ona-white-angus'), 'value' => 'default', ),
+					array( 'name' => __('No', 'ona-white-angus'), 'value' => 'no', ),
+					array( 'name' => __('Yes', 'ona-white-angus'), 'value' => 'yes', ),
 				),
 			),	
 			array(
-				'name' => __('Posts Carousel', 'pinnacle'),
-				'desc' => __('Display a carousel with similar or recent posts?', 'pinnacle'),
+				'name' => __('Posts Carousel', 'ona-white-angus'),
+				'desc' => __('Display a carousel with similar or recent posts?', 'ona-white-angus'),
 				'id'   => $prefix . 'blog_carousel_similar',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Default', 'pinnacle'), 'value' => 'default', ),
-					array( 'name' => __('No', 'pinnacle'), 'value' => 'no', ),
-					array( 'name' => __('Yes - Display Recent Posts', 'pinnacle'), 'value' => 'recent', ),
-					array( 'name' => __('Yes - Display Similar Posts', 'pinnacle'), 'value' => 'similar', )
+					array( 'name' => __('Default', 'ona-white-angus'), 'value' => 'default', ),
+					array( 'name' => __('No', 'ona-white-angus'), 'value' => 'no', ),
+					array( 'name' => __('Yes - Display Recent Posts', 'ona-white-angus'), 'value' => 'recent', ),
+					array( 'name' => __('Yes - Display Similar Posts', 'ona-white-angus'), 'value' => 'similar', )
 				),
 				
 			),
 			array(
-				'name' => __('Carousel Title', 'pinnacle'),
-				'desc' => __('ex. Similar Posts', 'pinnacle'),
+				'name' => __('Carousel Title', 'ona-white-angus'),
+				'desc' => __('ex. Similar Posts', 'ona-white-angus'),
 				'id'   => $prefix . 'blog_carousel_title',
 				'type' => 'text_medium',
 			),
@@ -268,7 +268,7 @@ $meta_boxes[] = array(
 	);
 	$meta_boxes[] = array(
 				'id'         => 'bloglist_metabox',
-				'title'      => __('Blog List Options', 'pinnacle'),
+				'title'      => __('Blog List Options', 'ona-white-angus'),
 				'pages'      => array( 'page' ), // Post type
 				'show_on' => array('key' => 'page-template', 'value' => array( 'template-blog.php') ),
 				'context'    => 'normal',
@@ -277,19 +277,19 @@ $meta_boxes[] = array(
 				'fields' => array(
 			
 			array(
-                'name' => __('Blog Category', 'pinnacle'),
-                'desc' => __('Select all blog posts or a specific category to show', 'pinnacle'),
+                'name' => __('Blog Category', 'ona-white-angus'),
+                'desc' => __('Select all blog posts or a specific category to show', 'ona-white-angus'),
                 'id' => $prefix .'blog_cat',
                 'type' => 'imag_select_category',
                 'taxonomy' => 'category',
             ),
 			array(
-				'name'    => __('How Many Posts Per Page', 'pinnacle'),
+				'name'    => __('How Many Posts Per Page', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'blog_items',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('All', 'pinnacle'), 'value' => 'all', ),
+					array( 'name' => __('All', 'ona-white-angus'), 'value' => 'all', ),
 					array( 'name' => '2', 'value' => '2', ),
 					array( 'name' => '3', 'value' => '3', ),
 					array( 'name' => '4', 'value' => '4', ),
@@ -308,20 +308,20 @@ $meta_boxes[] = array(
 				),
 			),
 			array(
-				'name'    => __('Display Post Content as:', 'pinnacle'),
+				'name'    => __('Display Post Content as:', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'blog_summery',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Summary', 'pinnacle'), 'value' => 'summery', ),
-					array( 'name' => __('Full', 'pinnacle'), 'value' => 'full', ),
+					array( 'name' => __('Summary', 'ona-white-angus'), 'value' => 'summery', ),
+					array( 'name' => __('Full', 'ona-white-angus'), 'value' => 'full', ),
 				),
 			),
 				
 			));
 			$meta_boxes[] = array(
 				'id'         => 'bloggrid_metabox',
-				'title'      => __('Blog Grid Options', 'pinnacle'),
+				'title'      => __('Blog Grid Options', 'ona-white-angus'),
 				'pages'      => array( 'page' ), // Post type
 				'show_on' => array('key' => 'page-template', 'value' => array( 'template-blog-grid.php')),
 				'context'    => 'normal',
@@ -330,19 +330,19 @@ $meta_boxes[] = array(
 				'fields' => array(
 			
 			array(
-                'name' => __('Blog Category', 'pinnacle'),
-                'desc' => __('Select all blog posts or a specific category to show', 'pinnacle'),
+                'name' => __('Blog Category', 'ona-white-angus'),
+                'desc' => __('Select all blog posts or a specific category to show', 'ona-white-angus'),
                 'id' => $prefix .'blog_cat',
                 'type' => 'imag_select_category',
                 'taxonomy' => 'category',
             ),
 			array(
-				'name'    => __('How Many Posts Per Page', 'pinnacle'),
+				'name'    => __('How Many Posts Per Page', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'blog_items',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('All', 'pinnacle'), 'value' => 'all', ),
+					array( 'name' => __('All', 'ona-white-angus'), 'value' => 'all', ),
 					array( 'name' => '2', 'value' => '2', ),
 					array( 'name' => '3', 'value' => '3', ),
 					array( 'name' => '4', 'value' => '4', ),
@@ -361,20 +361,20 @@ $meta_boxes[] = array(
 				),
 			),
 			array(
-				'name'    => __('Choose Column Layout:', 'pinnacle'),
+				'name'    => __('Choose Column Layout:', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'blog_columns',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('Four Column', 'pinnacle'), 'value' => '4', ),
-					array( 'name' => __('Three Column', 'pinnacle'), 'value' => '3', ),
-					array( 'name' => __('Two Column', 'pinnacle'), 'value' => '2', ),
+					array( 'name' => __('Four Column', 'ona-white-angus'), 'value' => '4', ),
+					array( 'name' => __('Three Column', 'ona-white-angus'), 'value' => '3', ),
+					array( 'name' => __('Two Column', 'ona-white-angus'), 'value' => '2', ),
 				),
 			),		
 			));
 			$meta_boxes[] = array(
 				'id'         => 'page_sidebar',
-				'title'      => __('Sidebar Options', 'pinnacle'),
+				'title'      => __('Sidebar Options', 'ona-white-angus'),
 				'pages'      => array( 'page' ), // Post type
 				'show_on' => array( 'key' => 'kt-template', 'value' => array('template-portfolio-grid','template-contact')),
 				'context'    => 'normal',
@@ -382,17 +382,17 @@ $meta_boxes[] = array(
 				'show_names' => true,
 				'fields' => array(
 			array(
-				'name' => __('Display Sidebar?', 'pinnacle'),
-				'desc' => __('Choose if layout is fullwidth or sidebar', 'pinnacle'),
+				'name' => __('Display Sidebar?', 'ona-white-angus'),
+				'desc' => __('Choose if layout is fullwidth or sidebar', 'ona-white-angus'),
 				'id'   => $prefix . 'page_sidebar',
 				'type'    => 'select',
 				'options' => array(
-					array( 'name' => __('No', 'pinnacle'), 'value' => 'no', ),
-					array( 'name' => __('Yes', 'pinnacle'), 'value' => 'yes', ),
+					array( 'name' => __('No', 'ona-white-angus'), 'value' => 'no', ),
+					array( 'name' => __('Yes', 'ona-white-angus'), 'value' => 'yes', ),
 				),
 			),
 			array(
-				'name'    => __('Choose Sidebar', 'pinnacle'),
+				'name'    => __('Choose Sidebar', 'ona-white-angus'),
 				'desc'    => '',
 				'id'      => $prefix . 'sidebar_choice',
 				'type'    => 'imag_select_sidebars',

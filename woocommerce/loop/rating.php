@@ -17,6 +17,6 @@ if ( get_option( 'woocommerce_enable_review_rating' ) == 'no' )
 			if ( $rating_html = $product->get_rating_html() ) { ?>
 				<a href="<?php the_permalink(); ?>"><?php echo $rating_html; ?></a>
 			<?php } else { 
-				echo "<span class='notrated'>".__('not rated', 'pinnacle')."</span>";
+				echo "<span class='notrated'>".__('not rated', 'ona-white-angus')."</span>";
 			} 
 	} ?>

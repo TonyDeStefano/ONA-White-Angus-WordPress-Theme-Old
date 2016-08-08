@@ -69,7 +69,7 @@
               <ul class="sf-menu">
                 <li>
                   <a href="#">
-                    <?php _e('No menu assigned', 'pinnacle');?>
+                    <?php _e('No menu assigned', 'ona-white-angus');?>
                   </a>
                 </li>
               </ul>

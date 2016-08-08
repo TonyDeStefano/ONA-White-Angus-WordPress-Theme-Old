@@ -456,8 +456,8 @@ class cmb_Meta_Box_field {
 		$args['options']    = isset( $args['options'] ) && is_array( $args['options'] ) ? $args['options'] : array();
 
 		$args['options']    = 'group' == $args['type'] ? wp_parse_args( $args['options'], array(
-			'add_button'    => __( 'Add Group', 'pinnacle' ),
-			'remove_button' => __( 'Remove Group', 'pinnacle' ),
+			'add_button'    => __( 'Add Group', 'ona-white-angus' ),
+			'remove_button' => __( 'Remove Group', 'ona-white-angus' ),
 		) ) : $args['options'];
 
 		$args['_id']        = $args['id'];

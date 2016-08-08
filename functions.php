@@ -1,6 +1,6 @@
 <?php
 function pinnacle_lang_setup() {
-load_theme_textdomain('pinnacle', get_template_directory() . '/languages');
+load_theme_textdomain('ona-white-angus', get_template_directory() . '/languages');
 }
 add_action( 'after_setup_theme', 'pinnacle_lang_setup' );
 

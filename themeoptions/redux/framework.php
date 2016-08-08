@@ -217,15 +217,15 @@
                 }
 
                 if ( empty ( $this->args['footer_credit'] ) ) {
-                    $this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'pinnacle' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank">' . __( 'Redux Framework', 'pinnacle' ) . '</a> v' . self::$_version ) . '</span>';
+                    $this->args['footer_credit'] = '<span id="footer-thankyou">' . sprintf( __( 'Options panel created using %1$s', 'ona-white-angus' ), '<a href="' . esc_url( $this->framework_url ) . '" target="_blank">' . __( 'Redux Framework', 'ona-white-angus' ) . '</a> v' . self::$_version ) . '</span>';
                 }
 
                 if ( empty ( $this->args['menu_title'] ) ) {
-                    $this->args['menu_title'] = __( 'Options', 'pinnacle' );
+                    $this->args['menu_title'] = __( 'Options', 'ona-white-angus' );
                 }
 
                 if ( empty ( $this->args['page_title'] ) ) {
-                    $this->args['page_title'] = __( 'Options', 'pinnacle' );
+                    $this->args['page_title'] = __( 'Options', 'ona-white-angus' );
                 }
 
                 $this->old_opt_name = $this->args['opt_name'];
@@ -1672,29 +1672,29 @@
 
                     // Default url values for enabling hints.
                     $dismiss = 'true';
-                    $s       = __( 'Enable', 'pinnacle' );
+                    $s       = __( 'Enable', 'ona-white-angus' );
 
                     // Values for disabling hints.
                     if ( 'true' == $hint_status ) {
                         $dismiss = 'false';
-                        $s       = __( 'Disable', 'pinnacle' );
+                        $s       = __( 'Disable', 'ona-white-angus' );
                     }
 
                     // Make URL
                     $url = '<a class="redux_hint_status" href="?dismiss=' . $dismiss . '&amp;id=hints&amp;page=' . $curPage . '&amp;tab=' . $curTab . '">' . $s . ' hints</a>';
 
-                    $event = __( 'moving the mouse over', 'pinnacle' );
+                    $event = __( 'moving the mouse over', 'ona-white-angus' );
                     if ( 'click' == $this->args['hints']['tip_effect']['show']['event'] ) {
-                        $event = __( 'clicking', 'pinnacle' );
+                        $event = __( 'clicking', 'ona-white-angus' );
                     }
 
                     // Construct message
-                    $msg = sprintf( __( 'Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below.', 'pinnacle' ), $event, strtolower( $s ) ) . '<br/><br/>' . $url;
+                    $msg = sprintf( __( 'Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below.', 'ona-white-angus' ), $event, strtolower( $s ) ) . '<br/><br/>' . $url;
 
                     // Construct hint tab
                     $tab = array(
                         'id'      => 'redux-hint-tab',
-                        'title'   => __( 'Hints', 'pinnacle' ),
+                        'title'   => __( 'Hints', 'ona-white-angus' ),
                         'content' => '<p>' . $msg . '</p>'
                     );
 
@@ -1821,7 +1821,7 @@
                 }
 
                 if ( ! empty ( $default_output ) ) {
-                    $default_output = __( 'Default', 'pinnacle' ) . ": " . substr( $default_output, 0, - 2 );
+                    $default_output = __( 'Default', 'ona-white-angus' ) . ": " . substr( $default_output, 0, - 2 );
                 }
 
                 if ( ! empty ( $default_output ) ) {
@@ -2699,7 +2699,7 @@
             public function ajax_save() {
                 if ( ! wp_verify_nonce( $_REQUEST['nonce'], "redux_ajax_nonce" . $this->args['opt_name'] ) ) {
                     echo json_encode( array(
-                        'status' => __( 'Invalid security credential.  Please reload the page and try again.', 'pinnacle' ),
+                        'status' => __( 'Invalid security credential.  Please reload the page and try again.', 'ona-white-angus' ),
                         'action' => ''
                     ) );
 
@@ -2708,7 +2708,7 @@
 
                 if ( ! current_user_can( $this->args['page_permissions'] ) ) {
                     echo json_encode( array(
-                        'status' => __( 'Invalid user capability.  Please reload the page and try again.', 'pinnacle' ),
+                        'status' => __( 'Invalid user capability.  Please reload the page and try again.', 'ona-white-angus' ),
                         'action' => ''
                     ) );
 
@@ -2788,7 +2788,7 @@
                             $return_array = array( 'status' => $e->getMessage() );
                         }
                     } else {
-                        echo json_encode( array( 'status' => __( 'Your panel has no fields. Nothing to save.', 'pinnacle' ) ) );
+                        echo json_encode( array( 'status' => __( 'Your panel has no fields. Nothing to save.', 'ona-white-angus' ) ) );
                     }
                 }
                 if ( isset ( $this->transients['run_compiler'] ) && $this->transients['run_compiler'] ) {
@@ -3883,7 +3883,7 @@
                             if ( is_array( $arr ) && ! empty( $arr ) ) {
                                 foreach ( $arr as $x => $y ) {
                                     if ( strpos( strtolower( $y ), 'redux' ) >= 0 ) {
-                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>admin_bar_links</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'pinnacle' );
+                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>admin_bar_links</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'ona-white-angus' );
                                         $this->display_arg_change_notice( 'admin', $msg );
                                         $this->omit_admin_items = true;
                                         continue;
@@ -3898,7 +3898,7 @@
                             if ( is_array( $arr ) && ! empty( $arr ) ) {
                                 foreach ( $arr as $x => $y ) {
                                     if ( strpos( strtolower( $y ), 'redux' ) >= 0 ) {
-                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>share_icons</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'pinnacle' );
+                                        $msg = __( '<strong>Redux Framework Notice: </strong>There are references to the Redux Framework support site in your config\'s <code>share_icons</code> argument.  This is sample data.  Please change or remove this data before shipping your product.', 'ona-white-angus' );
                                         $this->display_arg_change_notice( 'share', $msg );
                                         $this->omit_share_icons = true;
                                     }
